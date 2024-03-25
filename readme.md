@@ -1,6 +1,6 @@
 # Websocket Mock
 
-This is a teeny tiny mock websocket server to simulate the hardware running behind the brewer and cleaner.
+This is a teeny tiny mock websocket server to simulate the hardware based websocket messenger.
 
 It is coded to take json messages and send back responses.
 
