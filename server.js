@@ -23,8 +23,11 @@ wss.on('connection', function connection(ws) {
     console.log('received: %s', message);
     // Add some delay before sending back the result
     setTimeout(() => {
-      ws.send('Success');
-    }, Math.floor(Math.random() * 2000));
+      const response = 'Success';
+      // const response = 'Error';
+      console.log('sending: ' + response)
+      ws.send(response);
+    }, 5000 + Math.floor(Math.random() * 10000));
 
   });
 
