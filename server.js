@@ -21,9 +21,11 @@ wss.on('connection', function connection(ws) {
 
   ws.on('message', function incoming(message) {
     console.log('received: %s', message);
+    // Add some delay before sending back the result
+    setTimeout(() => {
+      ws.send('Success');
+    }, Math.floor(Math.random() * 2000));
 
-    const data = JSON.parse(message)
-    handle(ws, data);
   });
 
   ws.on('close', function() {
