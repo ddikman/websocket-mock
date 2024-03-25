@@ -1,4 +1,4 @@
-# Websocket Mock
+# Websocket Mock
 
 This is a teeny tiny mock websocket server to simulate the hardware based websocket messenger.
 
